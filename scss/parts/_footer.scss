@@ -1,0 +1,146 @@
+.footer {
+  padding: 1.4% 0;
+  background-color: #3D4050;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @media (max-width: 850px) {
+      justify-content: center;
+    }
+  }
+
+  &__span {
+    @include smallText;
+
+    color: $colorWhite;
+
+    @media (max-width: 1210px) {
+      display: none;
+    }
+  }
+
+  &__upper-span {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 400px) {
+    padding: 2% 0;
+  }
+}
+
+.payment {
+  width: 33%;
+  display: flex;
+  align-items: center;
+
+  &__svg {
+    margin-right: 10px;
+  }
+
+  &__item {
+    @include smallText;
+
+    display: flex;
+    align-items: center;
+    color: #C3C3C3;
+
+    &:not(:last-child) {
+      margin-right: 38px;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background-color: #C3C3C3;
+    left: 30.4%;
+    top: 0;
+    position: absolute;
+
+    @media (max-width: 1210px) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background-color: #C3C3C3;
+    right: 30.3%;
+    top: 0;
+    position: absolute;
+
+    @media (max-width: 1210px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1210px) {
+    width: 50%;
+  }
+
+  @media (max-width: 850px) {
+    display: none;
+  }
+}
+
+.social {
+  width: 26.41%;
+  display: flex;
+  align-items: flex-end;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 39px;
+
+      @media (max-width: 400px) {
+        margin-bottom: 5px;
+        margin-right: 0;
+      }
+    }
+
+    &:last-child {
+      align-items: flex-end;
+    }
+  }
+
+  &__link {
+    @include smallText;
+    @include Transition;
+    @include LinkFocus;
+
+    border: 1px solid transparent;
+    color: $colorWhite;
+  }
+
+  &__svg {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 1210px) {
+    width: 44%;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    justify-content: flex-end;
+    justify-content: center;
+  }
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

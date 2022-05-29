@@ -1,0 +1,76 @@
+@mixin inputAddFile {
+  width: 31.6%;
+
+  &__file {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__file-icon-wrapper {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  &__file-button-text {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #272733;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+      text-transform: none;
+    }
+  }
+
+  &__file-button {
+    @include Transition;
+    padding: 3% 10%;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: center;
+    border-radius: 3px;
+    border: 2px solid $colorBlue;
+    cursor: pointer;
+
+    &.focus-visible {
+      outline: none;
+      background-color: $colorDarkBlue;
+      color: $colorWhite;
+      border: 2px solid $colorDarkBlue;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $colorDarkBlue;
+        border: 2px solid $colorDarkBlue;
+      }
+    }
+
+    &:active {
+      background-color: $colorWhite;
+      color: $colorGray;
+      border: 2px solid #6F6D7B;
+    }
+  }
+
+  @media (max-width: 576px) {
+    width: 60%;
+    justify-content: flex-end;
+    justify-content: center;
+  }
+
+  @media (max-width: 320px) {
+    width: 80%;
+  }
+
+}

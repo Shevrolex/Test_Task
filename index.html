@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>LoremIpsum</title>
+    <script defer src="js/focus-visible.min.js"></script>
+    <script defer src="js/choices.min.js"></script>
+    <script defer src="js/scroll-lock.min.js"></script>
+    <script defer src="js/index.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__link" aria-label="На главную">
+                <img src="img/logo.svg" alt="" class="header__logo" aria-hidden="true">
+            </a>
+            <button aria-label="Раскрыть меню" class="header__burger-btn">
+                <svg class="header__burger" width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="30" height="3" fill="#fff"/>
+                  <rect y="10" width="30" height="3" fill="#fff"/>
+                  <rect y="20" width="30" height="3" fill="#fff"/>
+                </svg>
+            </button>
+            <div class="header__menu">
+              <button aria-label="Закрыть меню" class="header__close">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="2.09094" width="29.5699" height="2.95699" transform="rotate(45 2.09094 0)" fill="#fff"/>
+                  <rect y="20.9092" width="29.5699" height="2.95699" transform="rotate(-45 0 20.9092)" fill="#fff"/>
+                </svg>
+              </button>
+              <nav class="header__nav nav" aria-label="Основная навигация">
+                  <ul class="nav__list">
+                      <li class="nav__item">
+                          <a href="#" class="nav__link">Бизнес</a>
+                      </li>
+                      <li class="nav__item">
+                          <a href="#" class="nav__link">О нас</a>
+                      </li>
+                      <li class="nav__item">
+                          <a href="#" class="nav__link">Цены</a>
+                      </li>
+                      <li class="nav__item">
+                          <a href="#" class="nav__link">Оформить заказ</a>
+                      </li>
+                  </ul>
+              </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__header">
+                    <span class="hero__blue-span">Lorem ipsum</span>
+                    dolor sit ametconsectetur
+                    <span class="hero__blue-span">adipiscing</span>
+                </h1>
+                <h2 class="hero__caption">At vero eos et accusamus et iusto odio dignissimos ducimus!</h2>
+                <ul class="hero__list">
+                    <li class="hero__item">Totam rem aperiam eaque ipsa</li>
+                    <li class="hero__item">Sit voluptatem accusantium doloremque laudantium</li>
+                    <li class="hero__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                </ul>
+                <div class="hero__buttons">
+                    <button class="hero__btn-order" type="button">заказать</button>
+                    <button class="hero__btn-more" type="button">подробнее</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="ordering">
+            <div class="container">
+                <h2 class="ordering__header">Оформление <span class="ordering__blue-span">Заказа</span></h2>
+                <span class="ordering__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</span>
+                <ul class="ordering__cards card">
+                    <li class="card__item">
+                        <span class="card__icon card__icon_search" aria-hidden="true"></span>
+                        <span class="card__span">Lorem ipsum dolorsit amet</span>
+                    </li>
+                    <li class="card__item">
+                        <span class="card__icon card__icon_percent" aria-hidden="true"></span>
+                        <span class="card__span">Сonsecteturadipiscing elit</span>
+                    </li>
+                    <li class="card__item">
+                        <span class="card__icon card__icon_file" aria-hidden="true"></span>
+                        <span class="card__span">Sed do eiusmod tempor</span>
+                    </li>
+                    <li class="card__item">
+                        <span class="card__icon card__icon_mail" aria-hidden="true"></span>
+                        <span class="card__span">Esse cillum doloreeu fugiat</span>
+                    </li>
+                    <li class="card__item">
+                        <span class="card__icon card__icon_money" aria-hidden="true"></span>
+                        <span class="card__span">Excepteur sint occaecat cupidatat non proident</span>
+                    </li>
+                </ul>
+                <form name="form" action="#" class="ordering__form form" method="post" enctype="multipart/form-data">
+                    <div class="form__main-info">
+                        <select name="select" id="selectCustom" class="form__select">
+                            <option value="">Выберите тип системы</option>
+                            <option>Sed ut perspiciatis</option>
+                            <option> Nemo enim ipsam</option>
+                            <option> Et harum quidem</option>
+                            <option>Temporibus autem</option>
+                            <option>Itaque earum rerum</option>
+                            <option>Sed ut perspiciatis</option>
+                            <option> Nemo enim ipsam</option>
+                            <option> Et harum quidem</option>
+                            <option>Temporibus autem</option>
+                            <option>Itaque earum rerum</option>
+                            <option>Sed ut perspiciatis</option>
+                            <option> Nemo enim ipsam</option>
+                            <option> Et harum quidem</option>
+                            <option>Temporibus autem</option>
+                            <option>Itaque earum rerum</option>
+                        </select>
+                        <input type="email" name="email" class="form__mail-input" placeholder="Ваш e-mail" aria-label="Введите емэйл">
+                        <input type="text" name="name" class="form__name-input" placeholder="Ваше имя" aria-label="Введите ваше имя">
+                    </div>
+
+                    <div class="form__range range">
+                        <div class="range__slide">
+                            <div class="range__text">
+                                <span class="range__span">Sed ut perspiciatis, unde omnis iste natus</span>
+                                <span id="demo" class="range__value"></span>
+                            </div>
+                            <input name="range" type="range" min="1" max="100" value="75" class="range__input-slider" id="myRange">
+                        </div>
+
+                        <div class="range__wrapper wrapper">
+                            <input name="file" type="file" id="input__file" class="wrapper__file" multiple>
+                            <label for="input__file" class="wrapper__file-button" tabindex="0">
+                            <span class="wrapper__file-icon-wrapper">
+                                <svg class="wrapper__file-icon" width="18" height="21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="m16.81 4.6-3.48-3.47A3 3 0 0 0 11.5.37h-10C.9.37.43.85.43 1.44V19.3c0 .59.48 1.07 1.07 1.07h15c.6 0 1.07-.48 1.07-1.07V6.44a3 3 0 0 0-.76-1.83ZM11.86 1.9c.19.06.38.16.45.24l3.5 3.5c.08.07.18.26.24.45h-4.2v-4.2Zm4.28 17.05H1.86V1.8h8.57v4.64c0 .6.48 1.07 1.07 1.07h4.64v11.43ZM4.71 9.3V10c0 .2.16.36.36.36h7.86c.2 0 .36-.16.36-.36V9.3c0-.2-.16-.36-.36-.36H5.07c-.2 0-.36.16-.36.36Zm8.22 2.5H5.07c-.2 0-.36.15-.36.35v.72c0 .2.16.36.36.36h7.86c.2 0 .36-.16.36-.36v-.72c0-.2-.16-.35-.36-.35Zm0 2.85H5.07c-.2 0-.36.16-.36.36v.72c0 .2.16.35.36.35h7.86c.2 0 .36-.15.36-.35V15c0-.2-.16-.36-.36-.36Z" fill="#272733"/></svg>
+                            </span>
+                            <span class="wrapper__file-button-text">Прикрепить файл</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="form__btn-send" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <span class="footer__span">&copy;&nbsp;2018 <span class="footer__upper-span">&laquo;LoremIpsum.net&raquo;</span> Все права защищены.</span>
+            <ul class="footer__payment payment">
+                <li class="payment__item payment__item_qivi">
+                  <svg class="payment__svg" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M16.9118 13.4559c.0601.3876-.0668.5517-.1951.5517-.1282 0-.3139-.1576-.521-.4703-.207-.3128-.2778-.6604-.1776-.8387a.2872.2872 0 0 1 .17-.1266.2977.2977 0 0 1 .2134.0219c.3406.1241.4742.6294.5103.862Zm-1.8877.8502c.4102.3347.5344.7328.318 1.0132a.6653.6653 0 0 1-.2453.182.6873.6873 0 0 1-.3038.0557.9977.9977 0 0 1-.6265-.2184c-.3714-.314-.4809-.8244-.2378-1.1139a.5343.5343 0 0 1 .196-.1366.5516.5516 0 0 1 .2382-.0391c.2448.0079.4789.0989.6612.2571Zm-.6839 3.2306c1.762 0 3.6737.5841 5.7911 2.3984.2111.181.493-.0439.3086-.27-2.08-2.5393-4.0077-3.0239-5.9221-3.4322-2.3458-.5014-3.5535-1.7794-4.3991-3.1815-.167-.2791-.2432-.23-.2579.1292a7.6552 7.6552 0 0 0 .1243 1.5895h-.286c-1.2021 0-2.3773-.3449-3.3769-.9909-.9996-.6461-1.7787-1.5644-2.2387-2.6388-.4601-1.0743-.5805-2.2565-.346-3.3971.2346-1.1405.8135-2.1882 1.6636-3.0105.85-.8223 1.9331-1.3823 3.1122-1.6091a6.2695 6.2695 0 0 1 3.512.3345c1.1107.445 2.06 1.1987 2.7279 2.1656.6679.9669 1.0244 2.1037 1.0244 3.2666a5.7847 5.7847 0 0 1-.0387.6836 9.3791 9.3791 0 0 0-1.9304-.035c-.2312.0195-.1978.1293-.0241.1539 2.0039.3501 3.3906 1.5506 3.7058 3.741a.0527.0527 0 0 0 .0135.0299.0568.0568 0 0 0 .0627.0136.0546.0546 0 0 0 .0254-.0215c1.0424-1.6856 1.4788-3.6575 1.2411-5.6082-.2377-1.9506-1.1361-3.7703-2.5551-5.1753-1.419-1.4049-3.2788-2.316-5.2893-2.5913-2.0105-.2753-4.0587.1008-5.825 1.0696-1.7663.9689-3.1515 2.476-3.9395 4.2861C.436 7.247.2895 9.2586.8073 11.1578c.5179 1.8992 1.671 3.5792 3.2795 4.778 1.6084 1.1988 3.5819 1.849 5.6124 1.8491 1.3426.0038 2.6798-.2494 4.641-.2494v.0012Z" fill="#3E9CDC"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(.5)" d="M0 0h20v20H0z"/></clipPath></defs></svg>
+                    QIWI wallet
+                </li>
+                <li class="payment__item payment__item_yandex">
+                  <svg class="payment__svg" width="15" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.78 8.93c0-.98.08-1.6 2.14-3.13C4.62 4.54 10.07.24 10.07.24v7.18h4.15v10.34H2.08a1.3 1.3 0 0 1-1.3-1.28V8.93Z" fill="#3E9CDC"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.07 7.42v4.17l-7.62 5.14 9.64-3.1v-6.2h-2.02Z" fill="#000" fill-opacity=".2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6.59 7.2c.45-.52 1.1-.7 1.45-.4.36.29.29.96-.16 1.48-.44.53-1.1.72-1.45.42-.36-.3-.29-.97.16-1.5Z" fill="#231F20"/></svg>
+                    Yandex Money
+                </li>
+                <li class="payment__item payment__item_web">
+                  <svg class="payment__svg" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M9.34 0a9.12 9.12 0 0 1 4.52 1.19l-.82.73L11.8.65 9.67 2.52 8.4 1.17 4.5 4.66 7 7.4l-.98.85 2.48 2.73-.98.85 3.54 3.9 2.1-1.9 1.82 2.03a9.07 9.07 0 0 1-5.62 1.94c-4.97 0-9.01-4-9.01-8.9a8.95 8.95 0 0 1 9-8.9ZM7.7 8.35l2.15-1.9 1.93 2.12-2.15 1.9-1.93-2.12Zm1.53 3.67 2.13-1.92 1.95 2.13-2.15 1.9-1.93-2.1Zm-3.06-7.3 2.15-1.9 1.93 2.13-2.15 1.9-1.93-2.12Zm3.94-1.01 1.6-1.43 1.44 1.58-1.6 1.44-1.44-1.6Zm2.85 6.54 1.6-1.43 1.45 1.6-1.6 1.43-1.45-1.6Zm1.41 3.22 1.6-1.43 1.45 1.58-1.6 1.44-1.45-1.6Zm.66-7.35 1.06-.95.97 1.05-1.07.96-.96-1.06Zm-1.38-3.14L14.71 2l.96 1.07-1.07.95-.96-1.05Zm2.74 6.29 1.06-.96.98 1.06-1.08.95-.96-1.05Zm-4.8-2.37 1.6-1.42 1.44 1.58-1.6 1.42-1.44-1.58Z" fill="#3E9CDC"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(.5)" d="M0 0h20v20H0z"/></clipPath></defs></svg>
+                    Web Money
+                </li>
+            </ul>
+            <ul class="footer__social social">
+                <li class="social__item social__item_mail">
+                    <a href="#" class="social__link" target="_blank">
+                      <svg class="social__svg" width="16" height="13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14.8 10.8c0 .2-.2.3-.3.3H2.2a.3.3 0 0 1-.3-.3V4.4l.6.6L6 7.8C6.7 8.3 7.4 9 8.3 9c.9 0 1.7-.7 2.3-1.2a114.8 114.8 0 0 1 4.2-3.4v6.4Zm0-8.7c0 .7-.7 1.6-1.3 2l-3.3 2.7c-.5.3-1.3 1.1-1.9 1.1-.6 0-1.4-.8-1.8-1.1L3 4A3 3 0 0 1 2 1.7c0-.1.1-.2.3-.2h12.3c.3 0 .3.3.3.6Zm1-.4c0-.7-.6-1.3-1.3-1.3H2.2C1.4.4.8 1 .8 1.7v9.1c0 .8.6 1.4 1.4 1.4h12.3c.7 0 1.3-.6 1.3-1.4v-9Z" fill="#3E9CDC"/></svg>
+                      info@ipsum228.com</a>
+                </li>
+                <li class="social__item social__item_vk">
+                    <a href="#" class="social__link" target="_blank">
+                      <svg class="social__svg" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15.18 12.29a3.5 3.5 0 0 1-1.36 2.94 4.6 4.6 0 0 1-1.63.82 8.5 8.5 0 0 1-2.24.24H4.71V3.21h4.63c.96 0 1.68.04 2.18.11.5.07.96.22 1.4.46.46.25.81.59 1.04 1 .23.43.35.92.35 1.47 0 .64-.16 1.2-.48 1.7-.32.5-.76.87-1.32 1.1v.07c.8.17 1.45.52 1.94 1.05.49.52.73 1.23.73 2.12ZM10.97 6.9c0-.21-.06-.43-.17-.65a.96.96 0 0 0-.5-.49c-.21-.09-.47-.14-.77-.15L8.2 5.61h-.23v2.77h.42l1.17-.02c.23-.01.47-.08.7-.19.27-.12.45-.29.55-.5.1-.22.15-.48.15-.76Zm.83 5.31c0-.4-.09-.72-.25-.94a1.5 1.5 0 0 0-.74-.52 2.5 2.5 0 0 0-.82-.13l-1.4-.01h-.6v3.27h.17a59 59 0 0 0 1.77-.01c.33-.01.67-.1 1-.24.3-.13.52-.32.66-.56.14-.25.2-.54.2-.86Z" fill="#3E9CDC"/></svg>
+                      Мы вконтакте</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+@import 'inputRange';
+@import 'inputFile';
+
+@mixin HeroOrdinaryText {
+  font-size: 20px;
+  line-height: 24px;
+  color: $colorBlack;
+}
+
+@mixin smallText {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@mixin HeroBtn {
+  text-transform: uppercase;
+  padding: 1% 5%;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+@mixin BtnFocus {
+  &.focus-visible {
+    outline: none;
+    background-color: $colorInput;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $colorInput;
+    }
+  }
+
+  &:active {
+    background-color: $colorBlue;
+  }
+}
+
+@mixin LinkFocus {
+  &.focus-visible {
+    outline: none;
+    border-bottom: 1px solid $colorBlue;
+    padding-bottom: 4px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: $colorBlue;
+    }
+  }
+
+  &:active {
+    color: $colorWhite;
+  }
+}
+
+@mixin BgImg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin Transition {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+@mixin input {
+  width: 31.6%;
+  padding: 1% 3% 1% 1%;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid $colorWhite;
+  border-radius: 3px;
+
+  &::placeholder {
+    font-size: 18;
+    line-height: 22px;
+    font-weight: 400;
+    color: #272733;
+  }
+
+  &.focus-visible {
+    outline: none;
+    background-color: $colorInput;
+    border: 1px solid $colorInput;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      cursor: pointer;
+      background-color: $colorInput;
+      border: 1px solid $colorInput;
+
+      &::placeholder {
+        color: $colorWhite;
+      }
+    }
+  }
+
+  &:active {
+    border: 1px solid $colorInput;
+  }
+}
+
+@mixin After {
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background-color: #C3C3C3;
+    left: 32px;
+    top: 4px;
+    position: relative;
+  }
+}

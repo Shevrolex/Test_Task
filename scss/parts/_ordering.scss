@@ -1,0 +1,404 @@
+.ordering {
+  @include BgImg;
+
+  padding: 6.4% 0 7.9%;
+  background-image: url("../img/img2.svg");
+  background-color: #272733;
+
+  &__header {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 800;
+    color: $colorWhite;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 27px;
+
+    @media (max-width: 768px) {
+      font-size: 26px;
+      line-height: 30px;
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: 567px) {
+      font-size: 18px;
+    }
+  }
+
+  &__blue-span {
+    color: $colorBlue;
+  }
+
+  &__text {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #BBBBBB;
+    text-align: center;
+    margin-bottom: 81px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+  padding-left: 11px;
+  padding-right: 9px;
+
+  &__item {
+    position: relative;
+    width: 16.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+
+    &:not(:last-child) {
+      &::after {
+        position: absolute;
+        top: 47px;
+        right: -75px;
+        width: 56.9%;
+        height: 6px;
+        content: "";
+        background: url("../img/Group.svg") no-repeat;
+        display: block;
+
+        @media (max-width: 1000px) {
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: row;
+      width: 60%;
+    }
+
+    @media (max-width: 500px) {
+      width: 80%;
+    }
+
+    @media (max-width: 400px) {
+      width: 90%;
+    }
+  }
+
+  &__icon {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: $colorBlue;
+    border: 5px solid #286690;
+    border-radius: 50%;
+    margin-bottom: 22px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    &_search {
+      background-image: url("../img/card1.svg");
+    }
+
+    &_percent {
+      background-image: url("../img/card2.svg");
+    }
+
+    &_file {
+      background-image: url("../img/card3.svg");
+    }
+
+    &_mail {
+      background-image: url("../img/card4.svg");
+    }
+
+    &_money {
+      background-image: url("../img/card5.svg");
+    }
+
+    @media (max-width: 768px) {
+      margin-right: 50px;
+    }
+
+    @media (max-width: 400px) {
+      min-width: 80px;
+      min-height: 80px;
+      margin-right: 20px;
+    }
+  }
+
+  &__span {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: $colorWhite;
+    text-align: center;
+
+    @media (max-width: 850px) {
+      font-size: 12px;
+    }
+
+    @media (max-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__main-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__btn-send {
+    @include Transition;
+    @include BtnFocus;
+
+    padding: 1.2% 11.9%;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    color: $colorWhite;
+    text-transform: uppercase;
+    background-color: $colorBlue;
+    border: 1px solid $colorWhite;
+    border-radius: 4px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+      text-transform: none;
+    }
+  }
+
+  &__mail-input {
+    @include Transition;
+    @include input;
+
+    @media (max-width: 768px) {
+      width: 70%;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 400px) {
+      width: 90%;
+    }
+  }
+
+  &__name-input {
+    @include Transition;
+    @include input;
+
+    @media (max-width: 768px) {
+      width: 70%;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 400px) {
+      width: 90%;
+    }
+  }
+}
+
+.range {
+  @include Range;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 55px;
+
+  &__slide {
+    width: 66%;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 400px) {
+      width: 90%;
+    }
+  }
+
+  &__value {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.choices {
+  width: 31.6%;
+  margin-bottom: 0;
+
+  &__inner {
+    background-color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 3px;
+  }
+
+  &[data-type*=select-one]::after {
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 6px;
+    background-size: cover;
+    border-style: none;
+    top: 45%;
+    right: 4%;
+    z-index: 3;
+  }
+
+  &[data-type*=select-one].is-open::after {
+    background-image: url("../img/arrow-open.svg");
+    transform: translate(0, 5px);
+  }
+
+  @media (max-width: 768px) {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 400px) {
+    width: 90%;
+  }
+}
+
+.choices .choices__list.choices__list--dropdown .choices__placeholder {
+  display: none;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  top: 50px;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: transparent;
+}
+
+.is-open .choices__inner {
+  background-color: $colorInput;
+  border: 1px solid $colorInput;
+  color: $colorWhite;
+  font-size: 18px;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
+.choices .choices__list--dropdown {
+  background-color: #272733;
+  color: $colorWhite;
+  padding-bottom: 10px;
+  z-index: 1;
+  border-radius: 3px;
+  width: 100%;
+  word-break: normal;
+}
+
+.choices__item.choices__item--selectable:hover {
+  color: $colorBlue;
+}
+
+.is-open .choices__list--dropdown,
+.is-open .choices__list[aria-expanded] {
+  border-color: $colorInput;
+}
+
+.choices .choices__inner {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  @include inputAddFile;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #3D4050;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3E9CDC;
+  border-radius: 6px;
+}
+
+.choices {
+  &__list {
+    scrollbar-width: thin;
+    scrollbar-color: #3E9CDC #3D4050;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #3D4050;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #3E9CDC;
+      border-radius: 3px;
+    }
+  }
+}
